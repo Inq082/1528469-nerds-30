@@ -1,93 +1,115 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<html class="page" lang="ru" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="utf-8">
     <title>Главная - Нёрдс</title>
-    <link rel="shortcut icon" href="favicon.ico" type="type="image/vnd.microsoft.icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
   <header class="main-header">
-    <nav class="main-navigation wrapper">
-    <a href="index.html"><img src="img/nerds-logo.svg" class="logo" width="160" height="70" alt="Логотип Nerds"></a>
-      <ul class="site-navigation">
-        <li><a href="#">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
-        <li><a class="basket" href="#">Корзина</a></li>
-      </ul>
-    </nav>
-    <div>
-      <section class="slider">
-        <h2 class="visually-hidden">Преимущества</h2>
-        <div>
-            <span class="slide-title">Долго, дорого,<br>скрупулезно</span>
-            <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-            <a class="button" href="#">Узнать больше</a>
+    <div class="wrapper">
+      <div class="menu">
+        <div class="menu-logo">
+          <a href="index.html"><img src="img/nerds-logo.svg" width="160" height="70" alt="Логотип Nerds"></a>
         </div>
-        <div>
-          <span class="slide-title">Любим математику<br> как никто другой</span>
-          <p>Никакого креатива, только математические формулы<br> для расчета идеальных пропорций</p>
-          <a class="button" href="#">Узнать больше</a>
+         <nav class="main-navigation">
+          <ul class="site-navigation">
+           <li class="menu-item"><a href="#">Студия</a></li>
+           <li class="menu-item"><a href="#">Клиенты</a></li>
+           <li class="menu-item"><a href="catalog.html">Магазин</a></li>
+           <li class="menu-item"><a href="#">Контакты</a></li>
+          </ul>
+         </nav>
+        <div class="menu-user">
+          <a class="basket" href="#">Корзина</a>
         </div>
-        <div>
-          <span class="slide-title">Только ночь,<br> только хардкор</span>
-          <p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
-          <a class="button" href="#">Узнать больше</a>
-        </div>
-        <button class="slider-button slider-button1 slider-button-active" type="button" aria-label="Первый слайд"></button>
-        <button class="slider-button slider-button2" type="button" aria-label="Второй слайд"></button>
-        <button class="slider-button slider-button3" type="button" aria-label="Третий слайд"></button>
-      </section>
+      </div>
     </div>
   </header>
-  <main class="wrapper">
-      <div class="services">
-        <div class="services-list-item">
+  <main class="main">
+    <div class="slider">
+      <div class="wrapper">
+        <input type="radio" class="slider-input" id="btn-1" name="toggle" checked>
+        <input type="radio" class="slider-input" id="btn-2" name="toggle">
+        <input type="radio" class="slider-input" id="btn-3" name="toggle">
+        <div class="slider-dots-wrp">
+          <label class="slider-dot slider-dot-active" for="btn-1"></label>
+          <label class="slider-dot slider-dot-active" for="btn-2"></label>
+          <label class="slider-dot slider-dot-active" for="btn-3"></label>
+        </div>
+        <div class="slider-list">
+          <div class="slider-item">
+            <div class="slider-text">
+              <span class="slider-title">Долго, дорого, скрупулезно.</span>
+              <p class="slider-slogan">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+              <a class="button button-slider" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="slider-text">
+              <span class="slider-title">Любим математику как никто другой</span>
+              <p class="slider-slogan">Никакого креатива, только математические формулы<br>
+                для расчета идеальных пропорций.</p>
+              <a class="button button-slider" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div class="slider-item">
+            <div class="slider-text">
+              <span class="slider-title">Только ночь, только хардкор</span>
+              <p class="slider-slogan">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+              <a class="button button-slider" href="#">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="services-list">
+        <div class="services-item">
           <img src="img/illustration-1.png" alt="Веб-сайты" width="300" height="146">
           <h3>Веб-сайты</h3>
-          <p>Мир никогда не будет прежним<br> после того, как увидит ваш сайт</p>
-          <a class="button services-item-button red" href="#" class="button">Заказать</a>
+          <p>Мир никогда не будет прежним<br> после того, как увидит ваш сайт!</p>
+          <a href="#" class="button services-item-button services-item-button-red">Заказать</a>
         </div>
-        <div class="services-list-item">
+        <div class="services-item">
           <img src="img/illustration-2.png" alt="Веб-сайты" width="300" height="146">
           <h3>Приложения</h3>
           <p>Покорите топ-10 приложений<br> в AppStore и Google Play</p>
-          <a href="#" class="button services-item-button green">Заказать</a>
+          <a href="#" class="button services-item-button services-item-button-green">Заказать</a>
         </div>
-        <div class="services-list-item">
+        <div class="services-item">
           <img src="img/illustration-3.png" alt="Веб-сайты" width="300" height="146">
           <h3>Презентации</h3>
-          <p>Вы даже не подозреваете,<br> насколько вы изумительны!</p>
-          <a href="#" class="button services-item-button yellow">Заказать</a>
+          <p>Вы даже не подозреваете,<br>насколько вы изумительны!</p>
+          <a href="#" class="button services-item-button services-item-button-yellow">Заказать</a>
         </div>
       </div>
-    <div class="features wrapper">
-      <div>
-          <h2 class="features-slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
-          <p class="features-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-          <span class="features-list-slogan">Выполняем заказы на разработку:</span>
-          <ul class="features-list">
-            <li class="features-item">Веб-сайтов любой сложности</li>
-            <li class="features-item">Мобильных приложений для iOS и Android</li>
-            <li class="features-item">Слайдшоу и видео для корпоративных презентаций</li>
+      <div class="features-description">
+        <div class="features-text">
+          <h2 class="features-text-title">Мы — маленькая, но гордая дизайн-студия из Краснодара. </h2>
+          <p class="features-text-slogan">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <h3>Выполняем заказы на разработку:</h3>
+          <ul class="features-text-list">
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
-        <div>
-          <div>
+        <div class="features-statistics">
+          <div class="features-logo">
             <img src="img/nerds-illustration.png" alt="Логотип">
           </div>
-          <span class="table-list-slogan">C 2004 года любим точность во всем</span>
+          <span class="features-table-title">C 2004 года любим точность во всем:</span>
           <table class="features-table">
-            <tr>
+            <tr class="features-table-row">
               <th>146<sup>%</sup></th>
               <th>100<sup>%</sup></th>
               <th>50<sup>%</sup></th>
             </tr>
-            <tr>
+            <tr class="features-table-row">
               <td>Уровень самоотдачи</td>
               <td>Соблюдение сроков</td>
               <td>Минимальная предоплата</td>
@@ -96,66 +118,54 @@
         </div>
       </div>
       <div class="partners">
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" alt="Академия" width="199" height="68"></a>
-        <a href="#"><img src="img/logo-2.png" alt="Бородинский" width="209" height="90"></a>
-        <a href="#"><img src="img/logo-3.png" alt="Пинк" width="185" height="52"></a>
-        <a href="#"><img src="img/logo-4.png" alt="Мишка" width="173" height="84"></a>
+        <ul class="partners-list">
+          <li class="partner"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" alt="Академия" width="199" height="68"></a></li>
+          <li class="partner"><a href="#"><img src="img/logo-2.png" alt="Бородинский" width="209" height="90"></a></li>
+          <li class="partner"><a href="#"><img src="img/logo-3.png" alt="Пинк" width="185" height="52"></a></li>
+          <li class="partner"><a href="#"><img src="img/logo-4.png" alt="Мишка" width="173" height="84"></a></li>
+        </ul>
       </div>
-    </div>
-    </div>
   </main>
-  <footer>
-    <div class="footer-map">
-      <img src="img/map.jpg" alt="Адрес">
-        <div class="footer-contacts">
-          <b>Nёrds design studio</b>
-          <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. +7 (812) 275-75-75</p>
-          <a href="#" class="button contacts-button">Напишите нам</a>
-        </div>
-      <div class="map-marker">
-        <img src="img/map-marker.svg" alt"Мы здесь" width="231" height="190">
+  <div class="address">
+    <div class="address-map">
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3c80899cb7b8347d15ee8a216ebab2d39b49b4b6a5180ef7fcefa1043848b563&amp;width=100%25&amp;height=418&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+    <div class="address-container">
+      <h1 class="address-title">NЁRDS DESIGN STUDIO</h1>
+      <p class="address-text">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+      <p class="address-phone">тел. +7 (812) 275-75-75</p>
+      <a href="#" class="button contacts-button">Напишите нам</a>
+    </div>
+  </div>
+  <div class="wrapper">
+    <footer class="footer">
+      <div class="footer-contacts">
+        <a href="#" class="footer-item footer-item-vk">Вконтакте</a>
+        <a href="#" class="footer-item footer-item-fb">Фейсбук</a>
+        <a href="#" class="footer-item footer-item-ig">Инстаграмм</a>
+      </div>
+      <div class="footer-text">
+        <p class="footer-text-slogan">Давайте дружить, это выгодно!</p>
+        <p class="footer-text-offer">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </footer>
+    <div class="modal">
+      <div class="modal-wrp">
+        <button class="modal-close" type="button" title="Закрыть">Закрыть</button>
+        <span class="modal-title">Напишите нам</span>
+        <form class="modal-form" action="#" method="post">
+          <label class="modal-text" for="login">Ваше имя:
+            <input class="modal-input modal-input-login" id="login" type="text" name="login" placeholder="Имя Фамилия">
+          </label>
+          <label class="modal-text" for="email">Ваш e-mail:
+            <input class="modal-input modal-input-mail" type="email" name="email" id="email" placeholder="email@example.com">
+          </label>
+          <p class="modal-text modal-text-comment">Текст письма:
+            <textarea class="modal-comment" name="comment" id="comment-field" rows="4" placeholder="В свободной форме"></textarea></p>
+          <button class="btn" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
-    <section class="socials wrapper">
-      <h2 class="visually-hidden">Мы в социальных сетях</h2>
-      <ul class="socials-list">
-        <li class="socials-item vkontakte">
-          <a href="#"><span class="visually-hidden">Вконтакте</span></a>
-        </li>
-        <li class="socials-item facebook">
-          <a href="#"><span class="visually-hidden">Фейсбук</span></a>
-        </li>
-        <li class="socials-item instagram">
-          <a href="#"><span class="visually-hidden">Инстаграм</span></a>
-        </li>
-      </ul>
-      <div class="socials-discount">
-        <b class="socials-slogan">Давайте дружить, это выгодно!</b>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-      </div>
-    </section>
-  </footer>
-  <section class="modal">
-    <h2 class="feedback-title">Напишите нам</h2>
-    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-      <div class="feedback-container">
-        <p class="feedback-field feedback-name">
-          <label for="feedback-name">Ваше имя:</label>
-          <input type="text" name="feedback-name" placeholder="Имя Фамилия" id="feedback-name">
-        </p>
-        <p class="feedback-field feedback-email">
-          <label for="feedback-email">Ваш e-mail:</label>
-          <input type="email" name="feedback-email" placeholder="email@example.com" id="feedback-email">
-        </p>
-      </div>
-      <p class="feedback-field feedback-text">
-        <label for="feedback-text">Текст письма:</label>
-        <textarea name="feedback-text" placeholder="В свободной форме" id="feedback-text"></textarea>
-      </p>
-      <button class="button feedback-button" type="submit">Отправить</button>
-    </form>
-    <button class="modal-close" type="button"><span class="visually-hidden">Закрыть окно</span></button>
-  </section>
+    <script src="js/modal.js"></script>
   </body>
 </html>
