@@ -24,6 +24,7 @@ body {
   background-color: #eeeeee;
   text-transform: uppercase;
   padding-top: 50px;
+
 }
 .menu {
   display: flex;
@@ -64,7 +65,7 @@ body {
   background: #fb565a;
   height: 2px;
   width: 100%;
-  bottom: -12px;
+  bottom: -15px;
 }
 .basket {
   position: relative;
@@ -116,7 +117,7 @@ body {
 .slider{
   background-color: #eeeeee;
   position: relative;
-  height: 420px;
+  height: 431px;
 }
 .slider-text {
   padding-top: 69px;
@@ -135,16 +136,19 @@ body {
   background-image: url("../img/slide1.png");
   background-repeat:no-repeat;
   background-position: 100% 10%;
+  height: 431px;
 }
 .slider-item:nth-child(2) {
   background-image: url("../img/slide2.png");
   background-repeat:no-repeat;
   background-position: 100% 10%;
+  height: 431px;
 }
 .slider-item:nth-child(3) {
   background-image: url("../img/slide3.png");
   background-repeat:no-repeat;
   background-position: 100% 10%;
+  height: 431px;
 }
 .slider-item {
   display: none;
@@ -234,7 +238,7 @@ body {
 .services-list {
   margin-top: 80px;
   padding-bottom: 80px;
-  border-bottom: 2px solid #eee;
+  border-bottom: 2px solid #eeeeee;
   display: flex;
   justify-content: space-between;
 }
@@ -261,6 +265,9 @@ body {
 
   display: flex;
   justify-content: space-between;
+  border-bottom: 2px solid #eeeeee;
+
+
 }
 .features-text {
   width: 660px;
@@ -336,7 +343,7 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
   /*padding: 40px 30px 48px 30px;*/
-  border-top: 2px solid #eeeeee;
+  /*border-top: 2px solid #eeeeee;*/
   border-bottom: 2px solid #eeeeee;
 }
 .partners-list{
@@ -385,15 +392,16 @@ body {
   z-index: 20;
   background: #ffffff url("../img/map-marker.svg") center no-repeat;
   background-size: cover;
-  top: 60px;
+  top: 45px;
   right: 0;
   left: 0;
   bottom: 0;
   margin-bottom: 110px;
 }
 .address-title {
-  padding: 0;
+  padding: 7px 2px;
   margin: 0;
+
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
@@ -401,8 +409,8 @@ body {
 .address-container {
   box-sizing: border-box;
   position: absolute;
-  top: 70px;
-  left: 91px;
+  top: 55px;
+  left: 51px;
   display: block;
   background-color: #fff;
   width: 319px;
@@ -414,15 +422,25 @@ body {
   display: block;
   color: #666666;
   width: 230px;
+  margin: 2px;
+  padding-top: 15px;
+  line-height: 105%;
 }
 .address-phone {
   color: #666666;
-  padding-top: 5px;
-  padding-bottom: 20px;
+  padding-top: -35px;
+  padding-left: 2px;
+  /*padding-bottom: 5px;*/
 }
 .contacts-button {
   background-color: #fb565a;
   width: 219px;
+  padding: 16px 0 16px 0;
+  margin-top: 35px;
+
+  margin-bottom: 35px;
+  margin-left: 3px;
+
 }
 /*footer*/
 .footer {
@@ -476,6 +494,7 @@ body {
   width: 660px;
 }
 .footer-text-slogan {
+  padding-top: 7px;
   margin: 0;
   font-size: 36px;
   line-height: 36px;
@@ -483,8 +502,9 @@ body {
 }
 .footer-text-offer {
   font-size: 16px;
-  line-height: 22px;
+  line-height: 14px;
   color: #444444;
+
 }
 /*catalog*/
 .page-title{
@@ -853,9 +873,10 @@ body {
   font-weight: 500;
   display: flex;
   max-width: 760px;
+  line-height: 16px;
   margin: 0;
-  padding-top: 7px;
-  padding-bottom: 52px;
+  padding-top: 25px;
+  /*padding-bottom: 50px;*/
   padding-left: 79px;
   list-style: none;
   flex-wrap: wrap;
@@ -871,11 +892,12 @@ body {
 .pagination-item a:visited{
   display: block;
   margin-right: 11px;
-  padding: 17px 20px;
+  padding: 17px 20px 15px;
   color: #000000;
   border-radius: 3px;
   background-color: #eeeeee;
   box-shadow: none;
+  text-decoration: none;
 }
 
 .pagination-item a:hover,
@@ -969,6 +991,10 @@ body {
 }
 
 /*checkboxes*/
+.catalog-filter-features {
+  margin: 48px auto;
+}
+
 .catalog-filter-features ul{
   display: block;
   margin: 0;
