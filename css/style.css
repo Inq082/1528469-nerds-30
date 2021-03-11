@@ -991,10 +991,6 @@ body {
 }
 
 /*checkboxes*/
-.catalog-filter-features {
-  margin: 48px auto;
-}
-
 .catalog-filter-features ul{
   display: block;
   margin: 0;
