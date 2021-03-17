@@ -198,13 +198,13 @@ body {
   width: 240px;
   margin-top: 38px;
 }
-.button-slider, .services-item-button-red {
+.button-slider, .services-item-button-red, .btn, .contacts-button {
   background-color: #fb565a;
 }
-.button-slider:hover, .services-item-button-red:hover  {
+.button-slider:hover, .services-item-button-red:hover, .btn:hover, .contacts-button:hover  {
   background-color: #e74246;
 }
-.button-slider:active, .services-item-button-red:active {
+.button-slider:active, .services-item-button-red:active, .btn:active, .contacts-button:active {
   color: #e26f72;
   background-color: #d7373b;
   box-shadow: 0 3px 0 0 #c13135 inset;
@@ -397,6 +397,9 @@ body {
   left: 0;
   bottom: 0;
   margin-bottom: 110px;
+}
+.address-map {
+  min-width: 1160px;
 }
 .address-title {
   padding: 7px 2px;
@@ -956,18 +959,20 @@ body {
 
 .filter-option{
   padding-bottom: 16px;
+
 }
 .radio{
   position: relative;
   opacity: 0.6;
   padding-left: 40px;
+  cursor: pointer;
 }
 .radio:hover,
 .radio:focus{
   opacity: 1;
 }
 .radio:disabled{
-  opacity: .1;
+  opacity: .3;
 }
 .radio-input{
   position: absolute;
@@ -987,9 +992,6 @@ body {
 }
 .radio-input:checked + .radio-box{
   background-image: url(../img/radio-on.svg);
-}
-.radio-input:focus + .radio-box{
-  outline: 1px solid blue;
 }
 
 /*checkboxes*/
@@ -1012,13 +1014,14 @@ body {
   padding-left: 40px;
   letter-spacing: 0.14px;
   opacity: .6;
+  cursor: pointer;
 }
 .check:hover,
 .check:focus{
   opacity: 1;
 }
 .check:disabled{
-  opacity: .1;
+  opacity: .3;
 }
 .check-input{
   position: absolute;
@@ -1038,9 +1041,6 @@ body {
   background-repeat:no-repeat;
 }
 
-.check-input:focus + .check-box{
-  outline: 1px solid blue;
-}
 /*modal*/
 .modal {
   position: fixed;
@@ -1117,6 +1117,7 @@ body {
 .modal-comment {
   width: 760px;
   height: 118px;
+  resize: vertical;
 }
 .btn {
   position: absolute;
@@ -1124,6 +1125,7 @@ body {
   background-color: #fb565a;
   width: 259px;
   border: 0;
+  cursor: pointer;
 }
 .btn:active, .btn:focus {
   outline: none;
@@ -1140,6 +1142,7 @@ body {
   background: none;
   background-image: url("../img/close-cross.png");
   opacity: .3;
+  outline: none;
 }
 .modal-close:hover {
   opacity: 1;
