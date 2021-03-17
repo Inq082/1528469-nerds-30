@@ -1068,7 +1068,7 @@ body {
   padding-bottom: 85px;
   box-sizing: border-box;
   width: 960px;
-  height: 590px;
+  height: auto;
   background-color: #ffffff;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   display: none;
