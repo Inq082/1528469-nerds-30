@@ -762,7 +762,6 @@ body {
 }
 .filter-button:active{
   box-shadow: 0 3px 0px rgba(0,1,1,0.1) inset;
-  /*color: #000000;*/
   color: rgba(0, 0, 0, 0.3);
   background-color: #d5d5d5;
   outline: none;
