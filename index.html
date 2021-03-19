@@ -32,17 +32,16 @@
   </header>
   <main class="main">
     <div class="slider">
-      <form name="slide">
       <div class="wrapper">
-        <input type="radio" class="slider-input" id="btn-1" name="toggle" checked>
-        <input type="radio" class="slider-input" id="btn-2" name="toggle">
-        <input type="radio" class="slider-input" id="btn-3" name="toggle">
-        <div class="slider-dots-wrp">
-          <label class="slider-dot slider-dot-active" for="btn-1"></label>
-          <label class="slider-dot slider-dot-active" for="btn-2"></label>
-          <label class="slider-dot slider-dot-active" for="btn-3"></label>
-        </div>
-        </form>
+        <form name="slide">
+           <input type="radio" class="slider-input" id="btn-1" name="toggle" checked>
+           <input type="radio" class="slider-input" id="btn-2" name="toggle">
+           <input type="radio" class="slider-input" id="btn-3" name="toggle">
+         <div class="slider-dots-wrp">
+           <label class="slider-dot slider-dot-active" for="btn-1"></label>
+           <label class="slider-dot slider-dot-active" for="btn-2"></label>
+           <label class="slider-dot slider-dot-active" for="btn-3"></label>
+         </div>
         <div class="slider-list">
           <div class="slider-item">
             <div class="slider-text">
@@ -67,6 +66,7 @@
             </div>
           </div>
         </div>
+        </form>
       </div>
     </div>
     <div class="wrapper">
@@ -164,7 +164,7 @@
             <input class="modal-input modal-input-mail" type="email" name="email" id="email" placeholder="email@example.com">
           </label>
           <p class="modal-text modal-text-comment">Текст письма:
-            <textarea class="modal-comment" name="comment" id="comment-field" rows="4" placeholder="В свободной форме"></textarea></p>
+            <textarea class="modal-comment" name="comment" id="comment-field" placeholder="В свободной форме"></textarea></p>
           <button class="btn" type="submit">Отправить</button>
         </form>
       </div>

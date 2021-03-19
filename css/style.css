@@ -2,6 +2,7 @@ body {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
+  min-width: 1160px;
 }
 .wrapper {
   width: 1160px;
@@ -752,6 +753,7 @@ body {
   outline: none;
   color: #000000;
   background-color: #eeeeee;
+  cursor: pointer;
 }
 .filter-button:hover,
 .filter-button:focus{
@@ -1124,6 +1126,7 @@ body {
 .modal-text {
   display: inline-block;
   width: 360px;
+
   font-weight: bold;
 }
 .modal-text-comment {
