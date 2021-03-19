@@ -964,7 +964,6 @@ body {
 }
 .radio{
   position: relative;
-  /*opacity: 0.4;*/
   padding-left: 40px;
   cursor: pointer;
 }
